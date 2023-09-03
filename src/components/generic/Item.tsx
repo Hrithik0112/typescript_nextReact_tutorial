@@ -12,7 +12,11 @@ type ItemProps<T extends User> = {
 };
 
 const Item = (props: ItemProps<{ id: number; username: string }>) => {
-  return <div>Item</div>;
+  return (
+    <div>
+      <h1>{props.id}</h1>
+    </div>
+  );
 };
 
 export default Item;

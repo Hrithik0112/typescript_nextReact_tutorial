@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import UseStateExample from "./4-usestate-example/page";
 import UseContextExample from "./5-usecontext-example/page";
 import UseRefExample from "./6-useref-example/page";
+import ItemList from "@/components/generic/ItemList";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       {/* <EventExample /> */}
       {/* <UseStateExample /> */}
       {/* <UseContextExample /> */}
-      <UseRefExample />
+      {/* <UseRefExample /> */}
+      <ItemList />
     </main>
   );
 }
