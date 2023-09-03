@@ -1,23 +1,20 @@
 "use client";
 import React, { useState } from "react";
 
-type UserType = {
+type Usrtype = {
   sessionId: number;
   name: string;
 };
 
 const UseStateExample = () => {
-  const [username, setUsername] = useState("");
-  const [user, setUser] = useState<UserType | null>(null);
-  // OR
-  // const [user, setUser] = useState<UserType>();
+  const [username, setUserName] = useState("");
+  const [user, setUser] = useState<Usrtype | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setUsername(e.target.value);
+    setUserName(e.target.value);
   };
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
     setUser({
       name: username,
       sessionId: Math.random(),
@@ -33,7 +30,7 @@ const UseStateExample = () => {
           <button onClick={handleClick}>Login</button>
         </form>
       )}
-      {/* BE AWARE */}
+      {/* used option chaining in the below line of code minimize error */}
       {user?.name}
     </div>
   );

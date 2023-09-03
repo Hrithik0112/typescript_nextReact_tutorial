@@ -1,13 +1,13 @@
-import Image from "next/image";
 import styles from "./page.module.css";
-import ChildrenPropExample from "./2-children-prop-example/page";
-import EventExample from "./3-event-example/page";
+
+import UseStateExample from "./4-usestate-example/page";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       {/* <ChildrenPropExample /> */}
-      <EventExample />
+      {/* <EventExample /> */}
+      <UseStateExample />
     </main>
   );
 }
