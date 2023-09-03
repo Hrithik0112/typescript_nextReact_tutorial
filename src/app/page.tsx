@@ -4,6 +4,7 @@ import UseStateExample from "./4-usestate-example/page";
 import UseContextExample from "./5-usecontext-example/page";
 import UseRefExample from "./6-useref-example/page";
 import ItemList from "@/components/generic/ItemList";
+import ShapeList from "@/components/exclude/ShapeList";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       {/* <UseStateExample /> */}
       {/* <UseContextExample /> */}
       {/* <UseRefExample /> */}
-      <ItemList />
+      {/* <ItemList /> */}
+      <ShapeList />
     </main>
   );
 }
