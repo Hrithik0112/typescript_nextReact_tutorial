@@ -7,6 +7,7 @@ const ChildrenPropExample = () => {
   return (
     <div>
       <Parent>
+        <Child />
         <SecondChild />
       </Parent>
     </div>

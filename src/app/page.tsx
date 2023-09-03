@@ -1,12 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import PostCard from "@/components/postCard/PostCard";
-import PostList from "@/components/postList/PostList";
+import ChildrenPropExample from "./2-children-prop-example/page";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <PostList />
+      <ChildrenPropExample />
     </main>
   );
 }

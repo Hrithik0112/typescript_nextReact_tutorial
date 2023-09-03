@@ -1,9 +1,16 @@
-import React from 'react'
+// import React from 'react'
+
+// const SecondChild = () => {
+//   return (
+//     <div>SecondChild</div>
+//   )
+// }
+
+// export default SecondChild
+import React from "react";
 
 const SecondChild = () => {
-  return (
-    <div>SecondChild</div>
-  )
-}
+  return <div>SecondChild</div>;
+};
 
-export default SecondChild
+export default SecondChild;
