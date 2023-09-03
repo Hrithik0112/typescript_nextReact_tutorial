@@ -9,15 +9,14 @@ const UseRefExample = () => {
     inputRef.current?.focus();
   }, []);
 
-  const handleClick = () => {
-    console.log("username is: " + usernameInputRef.current?.value);
+  const handlClick = () => {
+    console.log("username is :" + usernameInputRef.current?.value);
   };
-
   return (
     <div className="useRefExample">
       <input ref={inputRef} type="text" placeholder="focus here" />
       <input ref={usernameInputRef} type="text" placeholder="username" />
-      <button onClick={handleClick}>Send</button>
+      <button onClick={handlClick}>Send</button>
     </div>
   );
 };
