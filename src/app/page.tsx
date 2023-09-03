@@ -1,13 +1,15 @@
 import styles from "./page.module.css";
 
 import UseStateExample from "./4-usestate-example/page";
+import UseContextExample from "./5-usecontext-example/page";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       {/* <ChildrenPropExample /> */}
       {/* <EventExample /> */}
-      <UseStateExample />
+      {/* <UseStateExample /> */}
+      <UseContextExample />
     </main>
   );
 }
